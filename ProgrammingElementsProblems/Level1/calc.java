@@ -3,7 +3,9 @@ import java.util.Scanner;
 public class calc{
   public static void main(String[] args){
     Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter the first number:");
     int num1 = scanner.nextInt();
+    System.out.println("Enter the second number:");
     int num2 = scanner.nextInt();
     int add = num1+num2;
     int subtract = num1-num2;

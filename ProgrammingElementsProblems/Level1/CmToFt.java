@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class CmToFt{
   public static void main(String[] args){
     Scanner scanner = new Scanner(System.in);
+    System.out.println("Enter the ")
     int height = scanner.nextInt();
     float inches = ((float)height/2.54f);
     float feet = inches/(float)12;
