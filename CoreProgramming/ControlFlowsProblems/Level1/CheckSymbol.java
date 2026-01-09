@@ -1,3 +1,4 @@
+package ControlFlowProblems.Level1;
 import java.util.Scanner;
 public class CheckSymbol{
   public static void main(String[] args){
