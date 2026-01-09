@@ -27,5 +27,18 @@ public class YoungestTallest{
         System.out.println("Anthony is the youngest");
       }
     }
+    if(heightAmar>heightAkbar){
+      if(heightAmar>heightAnthony){
+        System.out.println("Amar is the tallest");
+      }else{
+        System.out.println("Anthony is the tallest");
+      }
+    }else{
+      if(heightAkbar>heightAnthony){
+        System.out.println("Akbhar is the tallest");
+      }else{
+        System.out.println("Anthony is the tallest");
+      }
+    }
   }
 }
