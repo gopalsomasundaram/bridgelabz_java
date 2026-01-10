@@ -37,3 +37,8 @@
 **What I have done:** Programming Elements Level 2, Control flow problems Level 1\
 **What I will do:** Control flow problems Level 2\
 **issues:** nil
+
+**Date:** 10th January 2025\
+**What I have done:** Control flow problems Level 2, Level 3, Arrays Level 1(partial)\
+**What I will do:** Arrays Level 1(partial), Level 2, Level 3\
+**issues:** nil
