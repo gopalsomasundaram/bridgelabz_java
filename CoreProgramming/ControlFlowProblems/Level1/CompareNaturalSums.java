@@ -1,3 +1,5 @@
+package ControlFlowProblems.Level1;
+
 import java.util.Scanner;
 public class CompareNaturalSums{
   public static void main(String[] args){

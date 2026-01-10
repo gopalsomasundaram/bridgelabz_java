@@ -1,3 +1,5 @@
+package ProgrammingElementsProblems.Level1;
+
 public class UniversityDiscountStatic{
   public static void main(String[] args){
     int fee = 125000;

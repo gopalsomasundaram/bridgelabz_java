@@ -1,3 +1,5 @@
+package ProgrammingElementsProblems.Level1;
+
 public class KiloMetersToMilesHardcoded{
   public static void main(String[] args){
     float km = 10.8f;

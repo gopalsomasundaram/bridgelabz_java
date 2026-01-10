@@ -1,3 +1,5 @@
+package ProgrammingElementsProblems.Level2;
+
 import java.util.Scanner;
 public class TravelComputation{
   public static void main(String[] args){

@@ -1,3 +1,5 @@
+package ControlFlowProblems.Level1;
+
 import java.util.Scanner;
 public class DivBy5{
   public static void main(String[] args){

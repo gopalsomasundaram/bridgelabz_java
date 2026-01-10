@@ -1,3 +1,5 @@
+package StarterProblems;
+
 import java.util.Scanner;
 
 public class KmToMi{

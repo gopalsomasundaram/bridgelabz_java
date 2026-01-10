@@ -1,3 +1,5 @@
+package ProgrammingElementsProblems.Level1;
+
 public class SamsMarks{
   public static void main(String[] args){
     float math = 94f;

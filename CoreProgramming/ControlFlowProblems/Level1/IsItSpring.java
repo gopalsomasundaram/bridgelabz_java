@@ -1,3 +1,5 @@
+package ControlFlowProblems.Level1;
+
 import java.util.Scanner;
 public class IsItSpring{
   public static void main(String[] args){

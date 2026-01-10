@@ -1,5 +1,7 @@
+package ControlFlowProblems.Level1;
+
 import java.util.Scanner;
-public class FactorialFor{
+public class FactorialWhile{
   public static void main(String[] args){
     Scanner scanner = new Scanner(System.in);
     System.out.println("Enter the number whose factorial needs to be found:");
@@ -9,9 +11,10 @@ public class FactorialFor{
       return;
     }
     int result = 1;
-    for(int i =1;i<=n;++i){
-      result*=i;
+    while(n>0){
+      result*=n;
+      n--;
     }
-    System.out.println("The factorial is "+result);
+    System.out.println("The factorial of given number is "+result);
   }
 }

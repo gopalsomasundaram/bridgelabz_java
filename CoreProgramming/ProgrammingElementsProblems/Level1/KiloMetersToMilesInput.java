@@ -1,3 +1,5 @@
+package ProgrammingElementsProblems.Level1;
+
 import java.util.Scanner;
 public class KiloMetersToMilesInput{
   public static void main(String[] args){
