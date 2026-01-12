@@ -42,3 +42,11 @@
 **What I have done:** Control flow problems Level 2, Level 3, Arrays Level 1(partial)\
 **What I will do:** Arrays Level 1(partial), Level 2, Level 3\
 **issues:** nil
+
+
+**Date:** 12th January 2025\
+**What I have done:** Array problems Level 1, Level 2, Method Problems Level 1(partial)\
+**What I will do:** Method problems Level 1(partial), Level 2, Level 3\
+**issues:** nil
+
+
