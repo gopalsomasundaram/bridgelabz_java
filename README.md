@@ -49,4 +49,9 @@
 **What I will do:** Method problems Level 1(partial), Level 2, Level 3\
 **issues:** nil
 
+**Date:** 13th January 2025\
+**What I have done:** Method Problems Level 1, Level 2, Level 3(partial)\
+**What I will do:** Method problems Level 3(partial), String problems\
+**issues:** nil
+
 
