@@ -1,6 +1,6 @@
 package String.Level1;
 import java.util.Scanner;
-public class compareStrings {
+public class CompareStrings {
     boolean isEqualCustom(String str1,String str2){
         if(str1.length()!=str2.length())
             return false;
@@ -18,7 +18,7 @@ public class compareStrings {
         System.out.println("Enter second string: ");
         String str2  = scanner.next();
         boolean inBuiltResult = str2.equals(str1);
-        compareStrings obj = new compareStrings();
+        CompareStrings obj = new CompareStrings();
         boolean customResult = obj.isEqualCustom(str1,str2);
         if(inBuiltResult == customResult)
             System.out.println("The results are same");
@@ -27,3 +27,4 @@ public class compareStrings {
         scanner.close();
     }
 }
+
