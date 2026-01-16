@@ -1,4 +1,4 @@
-# bridge_labz java
+# bridge_labz java daily progress
 ## dot-net
 
 **Date:** 15th December 2025\
