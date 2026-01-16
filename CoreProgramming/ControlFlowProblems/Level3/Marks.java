@@ -1,6 +1,11 @@
 package ControlFlowProblems.Level3;
 
 import java.util.Scanner;
+/*
+ * This class calculates subject averages and assigns academic levels.
+ * It uses floating-point math to ensure accuracy in percentages
+ * and a multi-step conditional ladder to map scores to grades.
+ */
 public class Marks {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
@@ -10,8 +15,12 @@ public class Marks {
         float chemistry = scanner.nextFloat();
         System.out.println("Enter math marks:");
         float math = scanner.nextFloat();
+
+        // Formula: (Total Marks / Number of Subjects)
         float percentage = ((math+physics+chemistry)/3);
         System.out.println("Average Marks= "+percentage);
+
+        //Categorization using an if-else ladder
         if(percentage>=80){
             System.out.println("Grade: A");
             System.out.println("Remarks: Level 4, Above agency-normalized standards");
