@@ -1,7 +1,13 @@
 package Methods.Level1;
 
 import java.util.Scanner;
+/*
+ * This class uses a method to determine the sign of a number.
+ * It maps input values to a specific "status code":
+ * -1 for Negative, 0 for Zero, 1 for Positive.
+ */
 public class CheckNumberSymbol {
+    //numChecker analyzes the integer 'n'
     int numChecker(int n){
         if(n<0) return -1;
         if(n>0) return 1;
@@ -13,6 +19,8 @@ public class CheckNumberSymbol {
         int n = scanner.nextInt();
         CheckNumberSymbol myObj = new CheckNumberSymbol();
         int result = myObj.numChecker(n);
+
+        // Decoding the result back into human-readable text
         if(result == 0){
             System.out.println("Number is zero");
         }else if(result == 1){
