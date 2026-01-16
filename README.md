@@ -1,5 +1,20 @@
-# bridge_labz java daily progress
+# daily progress Log bridgelabz_java-Training 
 ## dot-net
+
+**Date:** 8th December 2025\
+**What I have done:** Installation of Eclipse and IntelliJ Idea.\
+
+**Date:** 9th December 2025\
+**What I have done:** Installation of JAVA JDK and understanding of basics and syntax\
+
+**Date:** 10th December 2025\
+**What I have done:** Switched to .NET programming, installation of visual studio and dotNet development kit\
+
+**Date:** 11th December 2025\
+**What I have done:** Started learning and practicing Basics of C# programming language (variables,types,etc)\
+
+**Date:** 12th December 2025\
+**What I have done:** Completed learning Basics, started control flows, loops and in-built functions\
 
 **Date:** 15th December 2025\
 **What I have done:** Practice programs, level 1 and level 2 programs, WhatsApp questions upload of all programs to Github.\
