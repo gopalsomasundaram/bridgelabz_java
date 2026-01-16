@@ -5,7 +5,7 @@ import java.util.Scanner;
  * It takes user-defined rows (m) and columns (n), populates the grid,
  * and then maps each grid coordinate to a single linear index.
  */
-public class ArrayFlattenner {
+public class ArrayFlattener {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the number of rows in array:");
