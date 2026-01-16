@@ -1,3 +1,5 @@
-void main() {
-    IO.println(String.format("Hello and welcome!"));
+public class Main{
+    public static void main(String[] args){
+        System.out.println("Hello and welcome!");
+    }
 }

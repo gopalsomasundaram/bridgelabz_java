@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f739816a-26f9-454a-91b1-4ffa30f3b0b9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,37 +35,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.BankAccount.executor": "Run",
-    "Application.Book.executor": "Run",
-    "Application.CarRental.executor": "Run",
-    "Application.CartItem.executor": "Run",
-    "Application.Circle.executor": "Run",
-    "Application.Course.executor": "Run",
-    "Application.Employee.executor": "Run",
-    "Application.HotelBooking.executor": "Run",
-    "Application.Item.executor": "Run",
-    "Application.Library.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.MobilePhone.executor": "Run",
-    "Application.MovieTicket.executor": "Run",
-    "Application.PalindromeChecker.executor": "Run",
-    "Application.Product.executor": "Run",
-    "Application.Student.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "develop",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/gopal/codebaze",
-    "onboarding.tips.debug.path": "C:/Users/gopal/codebaze/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.BankAccount.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Book.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CarRental.executor&quot;: &quot;Run&quot;,
+    &quot;Application.CartItem.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Circle.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Course.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Employee.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HotelBooking.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Item.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Library.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MobilePhone.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MovieTicket.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PalindromeChecker.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Product.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Student.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/gopal/codebaze&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/gopal/codebaze/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
