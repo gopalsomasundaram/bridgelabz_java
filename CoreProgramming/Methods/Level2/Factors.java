@@ -1,10 +1,14 @@
 package Methods.Level2;
-
-import java.awt.*;
+/*
+ * This class calculates and analyzes the proper factors of a number.
+ * It uses specialized methods to compute the sum, product, and sum of squares
+ * of the factors stored in a dynamically sized array.
+ */
 import java.util.Scanner;
 public class Factors {
     static int[] getFactorsArray(int n){
         int count = 0;
+        // First pass: Count how many factors exist to size the array
         for(int i = 1;i<n;++i){
             if(n%i == 0){
                 count++;
@@ -12,6 +16,7 @@ public class Factors {
         }
         int[] arr = new int[count];
         int index = 0;
+        // Second pass: Populate the array with the factors
         for(int i = 1;i<n;++i){
             if(n%i==0){
                 arr[index++]=i;
@@ -19,6 +24,7 @@ public class Factors {
         }
         return arr;
     }
+    //Calculates the sum of all elements in the array
     static int sumOfFactors(int[] arr){
         int sum = 0;
         for(int i = 0;i<arr.length;++i){
@@ -26,6 +32,7 @@ public class Factors {
         }
         return sum;
     }
+    //Calculates the product of all elements in the array
     static int productOfFactrs(int[] arr){
         int product = 1;
         for(int i = 0;i<arr.length;i++){
@@ -33,6 +40,7 @@ public class Factors {
         }
         return product;
     }
+    //Calculates the sum of squares (1^2 + 2^2...)
     static int sumOfSquares(int[] arr){
         int sum = 0;
         for(int i : arr){

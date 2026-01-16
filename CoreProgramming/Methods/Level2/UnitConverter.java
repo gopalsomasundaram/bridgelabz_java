@@ -1,7 +1,12 @@
 package Methods.Level2;
 import java.util.Scanner;
+/*
+ * This class serves as a general-purpose unit conversion tool.
+ * It provides static methods for Distance, Weight, Temperature, and Volume.
+ */
 public class UnitConverter {
     //Q4
+    // --- Distance Conversions ---
     public static double convertKmToMiles(double km){
         double km2miles = 0.621371;
         double miles = km * km2miles;
@@ -49,6 +54,7 @@ public class UnitConverter {
         return cm;
     }
     //Q6
+    // --- Temperature Conversions ---
     public static double convertFarenheitToCelsius(double farenheit){
         double celsius = (farenheit - 32) * 5 / 9;
         return celsius;
@@ -57,6 +63,7 @@ public class UnitConverter {
         double farenheit= (celsius * 9 / 5) + 32;
         return farenheit;
     }
+    // --- weight Measurement Conversions ---
     public static double convertPounds2Kilogram(double pounds){
         double pounds2kilograms = 0.453592;
         double kg = pounds * pounds2kilograms;
@@ -67,6 +74,7 @@ public class UnitConverter {
         double pounds =kg * kilograms2pounds;
         return pounds;
     }
+    // --- Volume Conversions ---
     public static double convertGallons2Liters(double gallons){
         double gallons2liters = 3.78541;
         double liters = gallons * gallons2liters;
@@ -81,6 +89,7 @@ public class UnitConverter {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter measurement in gallons:");
         double gallons = scanner.nextDouble();
+        // Static Method Call: Called directly within the class
         double result = convertGallons2Liters(gallons);
         System.out.println(gallons+" in liters is "+result);
         scanner.close();
