@@ -1,7 +1,12 @@
 package String.Level2;
 
 import java.util.Scanner;
+/*
+ * This class splits a sentence into words and identifies the shortest and longest words.
+ * It utilizes a custom split algorithm and a 2D map to track word lengths.
+ */
 public class SplitTextShortestLongest {
+    // Manual length calculation using the 'Boundary Violation' strategy
     public int findLength(String text) {
         int count = 0;
         try {
@@ -13,6 +18,7 @@ public class SplitTextShortestLongest {
             return count;
         }
     }
+    // Custom split logic to break a sentence into an array of words
     public String[] customSplit(String text) {
         int len = findLength(text);
         int wordCount = 0;
@@ -40,6 +46,7 @@ public class SplitTextShortestLongest {
         }
         return words;
     }
+    // Maps words to their respective lengths in a 2D String array
     public String[][] generateWordMap(String[] words) {
         String[][] map = new String[words.length][2];
         for (int i = 0; i < words.length; i++) {
@@ -48,6 +55,7 @@ public class SplitTextShortestLongest {
         }
         return map;
     }
+    // Identifies the indices of the shortest and longest words in one pass
     public int[] findMinMaxIndices(String[][] wordMap) {
         int minIdx = 0;
         int maxIdx = 0;
@@ -55,9 +63,11 @@ public class SplitTextShortestLongest {
             int currentLen = Integer.parseInt(wordMap[i][1]);
             int minLenSoFar = Integer.parseInt(wordMap[minIdx][1]);
             int maxLenSoFar = Integer.parseInt(wordMap[maxIdx][1]);
+            // Finding the minimum (Shortest)
             if (currentLen < minLenSoFar) {
                 minIdx = i;
             }
+            // Finding the maximum (Longest)
             if (currentLen > maxLenSoFar) {
                 maxIdx = i;
             }
@@ -74,6 +84,7 @@ public class SplitTextShortestLongest {
         int[] results = obj.findMinMaxIndices(wordMap);
         int shortIdx = results[0];
         int longIdx = results[1];
+        //Output Results
         System.out.println("Shortest Word: " + wordMap[shortIdx][0] + " (Length: " + wordMap[shortIdx][1] + ")");
         System.out.println("Longest Word:  " + wordMap[longIdx][0] + " (Length: " + wordMap[longIdx][1] + ")");
         scanner.close();

@@ -1,7 +1,13 @@
 package String.Level2;
 
 import java.util.Scanner;
+/*
+ * This class splits a sentence into individual words and maps
+ * each word to its length using a 2D String array.
+ * It demonstrates manual string traversal and character extraction.
+ */
 public class SplitText2D {
+    // Manual length calculation without using .length()
     public int findLength(String text) {
         int count = 0;
         try {
@@ -13,12 +19,14 @@ public class SplitText2D {
             return count;
         }
     }
+    // Manual splitting of text based on spaces
     public String[] customSplit(String text) {
         int len = findLength(text);
         int wordCount = 0;
         if (len > 0) {
             wordCount = 1;
             for (int i = 0; i < len; i++) {
+                // When a space is hit, or the end of the string is reached
                 if (text.charAt(i) == ' ') wordCount++;
             }
         } else {
@@ -41,6 +49,7 @@ public class SplitText2D {
         }
         return words;
     }
+    // Creates a 2D Map: Column 0 = Word, Column 1 = Length
     public String[][] generateWordLengthMap(String[] words) {
         String[][] map = new String[words.length][2];
 
@@ -58,6 +67,7 @@ public class SplitText2D {
         String input = scanner.nextLine();
         String[] wordList = obj.customSplit(input);
         String[][] wordData = obj.generateWordLengthMap(wordList);
+        // Displaying results in a formatted table
         System.out.printf("%-10s | %-10s\n", "Word", "Length");
         for (int i = 0; i < wordData.length; i++) {
             String word = wordData[i][0];

@@ -2,8 +2,13 @@ package String.Level2;
 
 import java.util.Scanner;
 import java.util.Random;
+/*
+ * This class simulates a voting eligibility check for a group of people.
+ * It uses a 1D array for data input and a 2D array for the processed output map.
+ */
 public class VotingEligibility {
     public int[] getStudentAges(int n) {
+        // Generates an array of random ages between 10 and 99
         int[] ages = new int[n];
         Random random = new Random();
 
@@ -12,6 +17,7 @@ public class VotingEligibility {
         }
         return ages;
     }
+    // Maps each age to a voting status string
     public String[][] evaluateVoting(int[] ages) {
         String[][] statusMap = new String[ages.length][2];
         for (int i = 0; i < ages.length; i++) {
@@ -26,6 +32,7 @@ public class VotingEligibility {
         }
         return statusMap;
     }
+    // Formats and prints the 2D results array as a table
     public void displayVotingTable(String[][] data) {
         System.out.printf("%-10s | %-15s\n", "Age", "Can Vote?");
         for (int i = 0; i < data.length; i++) {

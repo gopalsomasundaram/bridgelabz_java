@@ -3,17 +3,24 @@ package String.Level2;
 import java.util.Scanner;
 import java.lang.Math;
 import java.util.Random;
+/*
+ * This class generates and processes academic performance data for 'n' students.
+ * It uses 2D arrays to map raw scores to statistics and letter grades.
+ */
 public class StudentMarks {
+    // Generates random marks between 10 and 99 for Physics, Chemistry, and Maths
     public int[][] generatePCMScores(int n) {
         int[][] scores = new int[n][3]; // 0: Physics, 1: Chemistry, 2: Maths
         Random random = new Random();
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < 3; j++) {
+                // random.nextInt(90) gives 0-89, +10 ensures a range of 10-99
                 scores[i][j] = random.nextInt(90) + 10;
             }
         }
         return scores;
     }
+    // Performs mathematical calculations for Total, Average, and Percentage
     public double[][] calculateStats(int[][] scores) {
         double[][] stats = new double[scores.length][3]; // 0: Total, 1: Average, 2: Percentage
         for (int i = 0; i < scores.length; i++) {
@@ -26,6 +33,7 @@ public class StudentMarks {
         }
         return stats;
     }
+    // Assigns alphabetical grades and qualitative levels based on percentage
     public String[][] calculateGrades(double[][] stats) {
         String[][] gradeData = new String[stats.length][2]; // 0: Grade, 1: Remarks
         for (int i = 0; i < stats.length; i++) {
@@ -52,6 +60,7 @@ public class StudentMarks {
         }
         return gradeData;
     }
+    // Formats and prints a multi-column scorecard
     public void displayScorecard(int[][] scores, double[][] stats, String[][] grades) {
         System.out.println("\n" + "=".repeat(95));
         System.out.printf("%-10s | %-3s | %-3s | %-3s | %-7s | %-7s | %-7s | %-5s | %-15s\n",
@@ -72,6 +81,7 @@ public class StudentMarks {
 
         System.out.print("Enter number of students: ");
         int n = sc.nextInt();
+        // Sequential processing
         int[][] pcmScores = system.generatePCMScores(n);
         double[][] performanceStats = system.calculateStats(pcmScores);
         String[][] finalGrades = system.calculateGrades(performanceStats);

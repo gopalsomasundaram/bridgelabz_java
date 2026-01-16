@@ -1,13 +1,19 @@
 package String.Level2;
-
+/*
+ * A Rock-Paper-Scissors game engine that tracks player vs. computer stats.
+ * Demonstrates game logic, case-insensitive string comparison, and
+ * data storage using 2D String arrays.
+ */
 import java.util.Scanner;
 public class RockPaperScissors {
+    // Generates a random move for the computer
     public String getComputerChoice() {
         int choice = (int) (Math.random() * 3); // 0, 1, or 2
         if (choice == 0) return "Rock";
         if (choice == 1) return "Paper";
         return "Scissors";
     }
+    // Determines the winner using String comparison
     public int findWinner(String user, String computer) {
         if (user.equalsIgnoreCase(computer)) return 0;
 
@@ -19,7 +25,7 @@ public class RockPaperScissors {
             return 2; // Computer wins
         }
     }
-
+    // Stores performance data in a 2D array: [Row 0: Player, Row 1: Computer]
     public String[][] calculateStats(int pWins, int cWins, int ties, int totalGames) {
         String[][] stats = new String[2][3];
 
@@ -36,7 +42,7 @@ public class RockPaperScissors {
 
         return stats;
     }
-
+    // Formats and displays the final scoreboard
     public void displayStats(String[][] stats, int ties) {
         System.out.printf("%-12s | %-10s | %-15s\n", "Entity", "Total Wins", "Win Percentage");
         for (String[] row : stats) {

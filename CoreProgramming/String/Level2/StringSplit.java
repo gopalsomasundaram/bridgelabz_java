@@ -1,7 +1,13 @@
 package String.Level2;
 import java.util.Scanner;
 import java.util.Arrays;
+/*
+ * This class demonstrates manual string splitting without using .split().
+ * It uses a two-pass approach: counting spaces to size the array,
+ * then extracting substrings based on those space locations.
+ */
 public class StringSplit {
+    // Manual length calculation using the 'Probe and Exception' strategy
     public int findLength(String text) {
         int count = 0;
         try {
@@ -13,6 +19,7 @@ public class StringSplit {
             return count;
         }
     }
+    // Custom split implementation
     public String[] customSplit(String text) {
         int len = findLength(text);
         int wordCount = 0;
@@ -49,6 +56,7 @@ public class StringSplit {
         }
         return words;
     }
+    // Deep comparison of two String arrays
     public boolean compareArrays(String[] arr1, String[] arr2) {
         if (arr1.length != arr2.length) return false;
         for (int i = 0; i < arr1.length; i++) {
@@ -64,6 +72,7 @@ public class StringSplit {
         String[] customWords = obj.customSplit(input);
         String[] builtInWords = input.split(" ");
         boolean match = obj.compareArrays(customWords, builtInWords);
+        // Print and Validate
         System.out.println("Custom Split:   " + Arrays.toString(customWords));
         System.out.println("Built-in Split: " + Arrays.toString(builtInWords));
         if (match) {
