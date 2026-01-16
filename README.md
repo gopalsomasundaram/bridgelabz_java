@@ -1,4 +1,4 @@
-# daily progress Log bridgelabz_java-Training 
+# daily progress Log bridgelabz-java-Training 
 ## dot-net
 
 **Date:** 8th December 2025\
