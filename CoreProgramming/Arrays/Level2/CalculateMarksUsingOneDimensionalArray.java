@@ -1,17 +1,26 @@
 package Arrays.Level2;
 
 import java.util.Scanner;
-public class Marks1D {
+/*
+ * This class calculates the percentage and grade for 'n' students using parallel arrays.
+ * It includes a manual validation check that forces the user to re-enter marks
+ * if a negative value is detected.
+ */
+public class CalculateMarksUsingOneDimensionalArray {
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number of students: ");
         int n = scanner.nextInt();
+
+        //Initialize Parallel Arrays
         float[] physics = new float[n];
         float[] chemistry = new float[n];
         float[] math = new float[n];
         float[] percentage = new float[n];
         char[] grade = new char[n];
+
+        //Input and Validation Loop
         for(int i =0;i<n;++i){
             System.out.printf("Enter the physics marks of student at index %d: ",i);
             physics[i] = scanner.nextFloat();
@@ -19,11 +28,15 @@ public class Marks1D {
             chemistry[i] = scanner.nextFloat();
             System.out.printf("Enter the math marks of student at index %d: ",i);
             math[i] = scanner.nextFloat();
+
+            //Check for invalid marks
             if(chemistry[i] < 0 || math[i] < 0 || physics[i] < 0){
                 System.out.println("Invalid Input, enter again");
                 i--;
             }
         }
+
+        //Calculation and Grading Loop
         for(int i = 0;i<n;++i) {
             percentage[i] = ((physics[i] + chemistry[i] + math[i]) / 3);
             if (percentage[i] >= 80.0f) {
@@ -39,6 +52,8 @@ public class Marks1D {
             } else {
                 grade[i] = 'R';
             }
+
+            //Display Result
             System.out.printf("Student at index %d has percentage %.1f and Grade: %c",i,percentage[i],grade[i]);
         }
     }

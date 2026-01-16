@@ -1,10 +1,16 @@
 package Arrays.Level2;
 import java.util.Scanner;
 import java.lang.Math;
-public class BMI1D {
+/*
+ * This class calculates BMI for 10 people using parallel arrays.
+ * It demonstrates how to synchronize data across multiple arrays
+ * using a single loop index.
+ */
+public class CalculateBmiOneDimension {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
 
+        //Parallel Array Initialization
         float[] weights = new float[10];
         float[] heights = new float[10];
         float[] bmis = new float[10];
@@ -14,13 +20,20 @@ public class BMI1D {
             weights[i] = scanner.nextFloat();
         }
         System.out.println("Enter the heights of 10 people in order(Cm):");
+
+        //Input Collection
         for(int i = 0;i<10;i++){
             heights[i] = scanner.nextFloat();
+            // Convert cm to meters immediately
             heights[i] *= 0.01f;
         }
+        //BMI Calculation
         for(int i = 0;i<10;++i){
+            // Formula: weight / height^2
             bmis[i] = (weights[i]/((float)(Math.pow(heights[i],2))));
         }
+
+        //Classification
         for(int i = 0;i<10;i++){
             if(bmis[i]<=18.4f){
                 status[i] = "Underweight";
@@ -32,7 +45,9 @@ public class BMI1D {
             }else{
                 status[i] = "Obese";
             }
-        }System.out.println("weight statuses according to BMI:");
+        }
+        //Output
+        System.out.println("weight statuses according to BMI:");
         for(String i : status){
             System.out.println(i);
         }
