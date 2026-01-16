@@ -1,6 +1,11 @@
 package Arrays.Level1;
 
 import java.util.Scanner;
+/*
+ * This class finds the proper factors of a number and stores them in an array.
+ * If the number of factors exceeds the initial array size, it dynamically
+ * doubles the array's capacity to accommodate more data.
+ */
 public class StoreFactors {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
@@ -14,14 +19,20 @@ public class StoreFactors {
         }
         int index = 0;
         for(int i = 1;i<n;++i){
+            //If the array is full, expand it
             if(index == maxFactors){
+                //Create a larger array
                 int[] biggerArray = new int[maxFactors*2];
+                //Copy elements from the old array to the new one
                 for(int j = 0;j<maxFactors;j++){
                     biggerArray[j] = arr[j];
                 }
+                //Update the tracking variables
                 maxFactors*=2;
+                //Point the original 'arr' reference to the new 'biggerArray'
                 arr=biggerArray;
             }
+            // Check for divisibility
             if(n%i==0)
             {
                 arr[index++]=i;
