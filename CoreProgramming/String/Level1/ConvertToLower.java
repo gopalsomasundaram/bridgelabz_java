@@ -1,11 +1,19 @@
 package String.Level1;
 
 import java.util.Scanner;
+/*
+ * This class manually converts a string to lowercase by manipulating
+ * character ASCII values and validates it against .toLowerCase().
+ */
 public class ConvertToLower {
+    // Method to convert Uppercase to Lowercase manually
     public String customToLowerCase(String text) {
         char[] result = new char[text.length()];
         for (int i = 0; i < text.length(); i++) {
             char ch = text.charAt(i);
+            // Logic: Uppercase 'A'-'Z' have ASCII values 65-90
+            // Lowercase 'a'-'z' have ASCII values 97-122
+            // Difference (97 - 65) is exactly 32
             if (ch >= 'A' && ch <= 'Z') {
                 result[i] = (char) (ch + 32);
             } else {
@@ -14,6 +22,7 @@ public class ConvertToLower {
         }
         return new String(result);
     }
+    // Deep equality check for two strings
     public boolean compareStrings(String s1, String s2) {
         if (s1.length() != s2.length()) {
             return false;
@@ -31,8 +40,14 @@ public class ConvertToLower {
         ConvertToLower obj = new ConvertToLower();
         System.out.println("Enter text with UPPERCASE letters to convert:");
         String input = scanner.nextLine();
+
+        // 1. Manual logic
         String manualLower = obj.customToLowerCase(input);
+
+        // 2. Built-in logic
         String builtInLower = input.toLowerCase();
+
+        // 3. Comparison
         boolean isMatch = obj.compareStrings(manualLower, builtInLower);
         System.out.println("Original Text:    " + input);
         System.out.println("Manual Lowercase: " + manualLower);

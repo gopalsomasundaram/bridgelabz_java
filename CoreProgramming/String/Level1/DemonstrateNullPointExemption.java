@@ -1,11 +1,13 @@
 package String.Level1;
 
+
 public class DemonstrateNullPointExemption {
     public void generateException() {
         System.out.println("Attempting to generate NullPointerException...");
         String text = null;
         int length = text.length();
     }
+    // This method handles the error gracefully
     public void handleException() {
         System.out.println("\nAttempting to handle NullPointerException safely...");
         String text = null;
@@ -23,11 +25,13 @@ public class DemonstrateNullPointExemption {
 
     public static void main(String[] args) {
         DemonstrateNullPointExemption obj = new DemonstrateNullPointExemption();
+        // 1. Managing the crash from the first method
         try {
             obj.generateException();
         } catch (NullPointerException e) {
             System.out.println("Main method caught the crash from generateException().");
         }
+        // 2. Running the method with internal handling
         obj.handleException();
         System.out.println("\nProgram execution continued successfully.");
     }
