@@ -1,4 +1,7 @@
 package StarterProblems;
+/*this class is the first of the starter problems
+it prints the statement welcom the bridgelabs
+*/
 
 public class Welcome{
 
