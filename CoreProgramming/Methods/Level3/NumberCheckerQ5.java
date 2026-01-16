@@ -1,6 +1,12 @@
 package Methods.Level3;
 import java.util.Scanner;
+/*
+ * This class checks for several special number types in mathematics.
+ * It demonstrates how digit manipulation can be used to identify
+ * Spy, Neon, Automorphic, and Buzz numbers.
+ */
 public class NumberCheckerQ5 extends NumberCheckerBase{
+    // Prime Number: Only divisible by 1 and itself
     boolean isPrime(int n){
         for(int i = 2;i<n;++i){
             if(n%i==0) {
@@ -9,6 +15,7 @@ public class NumberCheckerQ5 extends NumberCheckerBase{
         }
         return true;
     }
+    // Spy Number: Sum of digits == Product of digits
     boolean isSpyNumber(int n){
         int[] arr = getDigits(n,countDigits(n));
         int sum = 0;
@@ -19,6 +26,7 @@ public class NumberCheckerQ5 extends NumberCheckerBase{
         }
         return sum == product;
     }
+    // Neon Number: Sum of digits of its square == The number itself
     boolean isNeon(int n){
         int sqrd = (int)(Math.pow(n,2));
         int[] digits = getDigits(sqrd,countDigits(sqrd));
@@ -28,6 +36,7 @@ public class NumberCheckerQ5 extends NumberCheckerBase{
         }
         return sum == n;
     }
+    // Automorphic Number: The square ends with the number itself
     boolean isAutoMorphic(int n){
         int square = (int)(Math.pow(n,2));
         if(square%10 == n){
@@ -35,6 +44,7 @@ public class NumberCheckerQ5 extends NumberCheckerBase{
         }
         return false;
     }
+    // Buzz Number: Ends with 7 or is divisible by 7
     boolean isBuzzNumber(int n){
         return (n%7 == 0 || n %10 == 7);
     }
@@ -43,6 +53,7 @@ public class NumberCheckerQ5 extends NumberCheckerBase{
         System.out.println("Enter number:");
         int n = scanner.nextInt();
         NumberCheckerQ5 obj = new NumberCheckerQ5();
+        // Logical outputs
         if(obj.isPrime(n)) {
             System.out.println("It is a prime number");
         }

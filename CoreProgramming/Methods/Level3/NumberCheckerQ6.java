@@ -1,8 +1,12 @@
 package Methods.Level3;
 
 import java.util.Scanner;
-
+/*
+ * This class analyzes a number's divisors and digit properties.
+ * It classifies numbers as Perfect, Abundant, Deficit, or Strong.
+ */
 public class NumberCheckerQ6 extends NumberCheckerBase{
+    // Retrieves proper factors of n (excluding 1 and n)
     int[] getFactorsArray(int n){
         int count = 0;
         for(int i = 2;i<n;++i){
@@ -19,6 +23,7 @@ public class NumberCheckerQ6 extends NumberCheckerBase{
         }
         return arr;
     }
+    //get largest element in arr
     int getLargest(int[] arr){
         int largest = Integer.MIN_VALUE;
         for(int i : arr ){
@@ -26,6 +31,7 @@ public class NumberCheckerQ6 extends NumberCheckerBase{
         }
         return largest;
     }
+    //returns sum of given array
     int sumFactors(int[] arr){
         int sum = 0;
         for(int i : arr){
@@ -33,6 +39,7 @@ public class NumberCheckerQ6 extends NumberCheckerBase{
         }
         return sum;
     }
+    //multiplies and returns result of given array
     int prodFactors(int[] arr){
         int product = 1;
         for(int i : arr){
@@ -40,6 +47,7 @@ public class NumberCheckerQ6 extends NumberCheckerBase{
         }
         return product;
     }
+    //gets product of cube of given elements in array
     int prodOfCubeFactors(int[] arr){
         for(int i = 0;i<arr.length;++i){
             arr[i] = (int)(Math.pow(arr[i],3));
@@ -50,6 +58,7 @@ public class NumberCheckerQ6 extends NumberCheckerBase{
         }
         return product;
     }
+    // Logic: Perfect, Abundant, and Deficient numbers are based on the sum of factors
     boolean isPerfectNumber(int[] arr,int n){
         int sum = 0;
         for(int i : arr){
@@ -79,6 +88,7 @@ public class NumberCheckerQ6 extends NumberCheckerBase{
         return prod;
     }
     boolean isStrongNumber(int[] arr, int n){
+        // Strong Number: Sum of factorials of digits == number
         int sum = 0;
         for(int i = 0; i<arr.length;++i){
             sum+=getFactorial(arr[i]);
