@@ -1,4 +1,4 @@
-package programmingelements.Level1;
+package programmingelements.level1;
 /*
  * This class converts a user-inputted distance in kilometers to miles.
  * It reads an integer value for kilometers, applies the conversion factor

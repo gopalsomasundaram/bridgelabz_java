@@ -1,4 +1,4 @@
-package programmingelements.Level1;
+package programmingelements.level1;
 /*
  * This class calculates the discount and final fee for a university tuition.
  * It uses hardcoded values for the initial fee and the discount rate,

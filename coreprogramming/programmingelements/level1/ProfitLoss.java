@@ -1,4 +1,4 @@
-package programmingelements.Level1;
+package programmingelements.level1;
 /*
  * This class calculates the profit and profit percentage for a transaction.
  * It uses a hardcoded cost price and selling price, determines the

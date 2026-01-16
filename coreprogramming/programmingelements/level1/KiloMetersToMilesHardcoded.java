@@ -1,4 +1,4 @@
-package programmingelements.Level1;
+package programmingelements.level1;
 /*
  * This class converts a hardcoded distance in kilometers to miles.
  * It uses the conversion factor where 1 mile is approximately 1.6 kilometers,

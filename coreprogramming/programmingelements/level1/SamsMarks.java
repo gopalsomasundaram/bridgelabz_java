@@ -1,4 +1,4 @@
-package programmingelements.Level1;
+package programmingelements.level1;
 /*
  * This class calculates the average marks for a student (Sam) in
  * Physics, Chemistry, and Mathematics (PCM). It computes the

@@ -1,4 +1,4 @@
-package programmingelements.Level1;
+package programmingelements.level1;
 /*
  * This class calculates the age of a person (Harry) based on a
  * fixed birth year and a specific current year. It performs a

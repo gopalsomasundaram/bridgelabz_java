@@ -1,4 +1,4 @@
-package programmingelements.Level2;
+package programmingelements.level2;
 /*
  * This class converts a temperature from Fahrenheit to Celsius.
  * It reads a double input, subtracts 32, and then multiplies by the

@@ -1,4 +1,4 @@
-package programmingelements.Level1;
+package programmingelements.level1;
 
 /*
  * This class calculates the distribution of pens among students.
