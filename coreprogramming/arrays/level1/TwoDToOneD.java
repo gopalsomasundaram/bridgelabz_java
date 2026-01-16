@@ -1,4 +1,4 @@
-package arrays.Level1;
+package arrays.level1;
 import java.util.Scanner;
 /*
  * This class demonstrates how to convert (flatten) a 2D array into a 1D array.

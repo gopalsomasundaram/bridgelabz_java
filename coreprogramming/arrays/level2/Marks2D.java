@@ -1,44 +1,40 @@
-package arrays.Level2;
+package arrays.level2;
 
 import java.util.Scanner;
 /*
- * This class calculates the percentage and grade for 'n' students using parallel arrays.
- * It includes a manual validation check that forces the user to re-enter marks
- * if a negative value is detected.
+ * This class uses a 2D array to manage student marks.
+ * Matrix Structure:
+ * - Rows (n): Represent individual students.
+ * - Columns (3): Represent [0] Physics, [1] Chemistry, [2] Math.
  */
-public class CalculateMarksUsingOneDimensionalArray {
-    public static void main(String[] args)
-    {
+public class Marks2D {
+    public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number of students: ");
         int n = scanner.nextInt();
 
-        //Initialize Parallel Arrays
-        float[] physics = new float[n];
-        float[] chemistry = new float[n];
-        float[] math = new float[n];
-        float[] percentage = new float[n];
-        char[] grade = new char[n];
+        //2D Array for marks
+        float[][] arr = new float[n][3];
 
         //Input and Validation Loop
         for(int i =0;i<n;++i){
             System.out.printf("Enter the physics marks of student at index %d: ",i);
-            physics[i] = scanner.nextFloat();
+            arr[i][0] = scanner.nextFloat();
             System.out.printf("Enter the chemistry marks of student at index %d: ",i);
-            chemistry[i] = scanner.nextFloat();
+            arr[i][1] = scanner.nextFloat();
             System.out.printf("Enter the math marks of student at index %d: ",i);
-            math[i] = scanner.nextFloat();
-
-            //Check for invalid marks
-            if(chemistry[i] < 0 || math[i] < 0 || physics[i] < 0){
+            arr[i][2] = scanner.nextFloat();
+            if(arr[i][0] < 0 || arr[i][1] < 0 || arr[i][2] < 0){
                 System.out.println("Invalid Input, enter again");
                 i--;
             }
         }
+        float[] percentage = new float[n];
+        char[] grade = new char[n];
 
-        //Calculation and Grading Loop
+        //Calculation and Grading
         for(int i = 0;i<n;++i) {
-            percentage[i] = ((physics[i] + chemistry[i] + math[i]) / 3);
+            percentage[i] = ((arr[i][0] + arr[i][1] + arr[i][2]) / 3);
             if (percentage[i] >= 80.0f) {
                 grade[i] = 'A';
             } else if (percentage[i] >= 70.0f) {
@@ -53,7 +49,7 @@ public class CalculateMarksUsingOneDimensionalArray {
                 grade[i] = 'R';
             }
 
-            //Display Result
+            //Display Output
             System.out.printf("Student at index %d has percentage %.1f and Grade: %c",i,percentage[i],grade[i]);
         }
     }
