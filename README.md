@@ -76,10 +76,10 @@
 
 **Date:** 15th January 2025\
 **What I have done:** String Problems Level 2 and 3, Class And Object problems Level 1\
-**What I will do:**  Class And Object problems and 2\
+**What I will do:**  Class And Object problems Level 2\
 **issues:** nil
 
 **Date:** 16th January 2025\
-**What I have done:** Constructors Level 1, added single and multi-line comments for week 1 programs\
+**What I have done:** Class And Object problems Level 2, Constructors Level 1, added single and multi-line comments for week 1 programs\
 **What I will do:** Constructors Level 2 \
 **issues:** nil
