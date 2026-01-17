@@ -1,6 +1,10 @@
 package strings.level3;
 
 import java.util.Scanner;
+/*
+ * This class determines if two strings are anagrams using a frequency counting algorithm.
+ * It maps characters to their ASCII integer values and tracks counts in an array.
+ */
 public class AnagramCheck {
     // Method to check if two strings are anagrams
     public boolean areAnagrams(String text1, String text2) {
@@ -36,6 +40,7 @@ public class AnagramCheck {
         String input1 = scanner.nextLine();
         System.out.print("Enter the second text: ");
         String input2 = scanner.nextLine();
+        //Remove spaces and ignore case
         String clean1 = input1.replaceAll("\\s", "").toLowerCase();
         String clean2 = input2.replaceAll("\\s", "").toLowerCase();
         boolean result = checker.areAnagrams(clean1, clean2);

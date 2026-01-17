@@ -1,12 +1,19 @@
 package strings.level3;
 
 import java.util.Scanner;
-public class BMI {
+/*
+ * This class calculates the Body Mass Index (BMI) for a team of 10 members.
+ * It transforms raw physical metrics into a formatted health status report.
+ */
+public class CalcuateBmi {
+    // Logic: Calculate BMI value and assign health category
         public String[] calculateSingleBMI(double weight, double heightCm) {
             double heightM = heightCm / 100.0;
             double bmi = weight / (heightM * heightM);
+            // Formula: weight (kg) / [height (m)]^2
             double roundedBMI = Math.round(bmi * 100.0) / 100.0;
             String status;
+            //Categorization based on WHO standards
             if (roundedBMI <= 18.4) {
                 status = "Underweight";
             } else if (roundedBMI <= 24.9) {
@@ -18,6 +25,7 @@ public class BMI {
             }
             return new String[]{String.valueOf(roundedBMI), status};
         }
+    // Transforms a raw double array into a descriptive String array
         public String[][] processTeamData(double[][] rawData) {
             String[][] results = new String[rawData.length][4];
             for (int i = 0; i < rawData.length; i++) {
@@ -31,6 +39,7 @@ public class BMI {
             }
             return results;
         }
+    // Formats and displays the health scoreboard
         public void displayTable(String[][] data) {
             System.out.println("\n" + "=".repeat(65));
             System.out.printf("%-10s | %-12s | %-12s | %-10s | %-15s\n",

@@ -1,7 +1,12 @@
 package strings.level3;
 
 import java.util.Scanner;
+/*
+ * This class generates a visual calendar for any given month and year.
+ * It calculates the starting day of the week and handles leap year variations.
+ */
 public class CustomCalendar {
+    // Maps the integer month to its English name
     public String getMonthName(int month) {
         String[] months = {
                 "", "January", "February", "March", "April", "May", "June",
@@ -9,6 +14,7 @@ public class CustomCalendar {
         };
         return months[month];
     }
+    // Logic: A year is leap if divisible by 4, but not 100, unless divisible by 400
     public boolean isLeapYear(int year) {
         return (year % 400 == 0) || (year % 4 == 0 && year % 100 != 0);
     }
@@ -19,6 +25,7 @@ public class CustomCalendar {
         }
         return days[month];
     }
+    //Calculates the day of the week for the 1st of the month
     public int getFirstDay(int month, int year) {
         int d = 1;
         int y0 = year - (14 - month) / 12;
@@ -27,7 +34,7 @@ public class CustomCalendar {
         int d0 = (d + x + (31 * m0) / 12) % 7;
         return d0; // 0=Sun, 1=Mon, ..., 6=Sat
     }
-
+    // Formats and prints the calendar grid
     public void printCalendar(int month, int year) {
         String monthName = getMonthName(month);
         int daysInMonth = getNumberOfDays(month, year);

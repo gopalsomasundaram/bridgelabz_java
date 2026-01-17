@@ -1,12 +1,18 @@
 package strings.level3;
 
 import java.util.Scanner;
+/*
+ * This class simulates a standard 52-card deck system.
+ * It handles deck creation, randomized shuffling, and dealing to multiple players.
+ */
 public class DeckOfCards {
+    //Initialize the deck using a Cartesian Product of Suits and Ranks
     public String[] initializeDeck(String[] suits, String[] ranks) {
         int numOfCards = suits.length * ranks.length;
         String[] deck = new String[numOfCards];
 
         int count = 0;
+        // Nested loop ensures every rank is paired with every suit
         for (String suit : suits) {
             for (String rank : ranks) {
                 deck[count++] = rank + " of " + suit;
@@ -18,15 +24,17 @@ public class DeckOfCards {
     public String[] shuffleDeck(String[] deck) {
         int n = deck.length;
         for (int i = 0; i < n; i++) {
+            // Pick a random index from the remaining "unshuffled" portion
             int randomCardNumber = i + (int) (Math.random() * (n - i));
 
+            // Swap the current card with the randomly selected card
             String temp = deck[i];
             deck[i] = deck[randomCardNumber];
             deck[randomCardNumber] = temp;
         }
         return deck;
     }
-
+    //Distribute cards into a 2D Array
     public String[][] distributeCards(String[] deck, int numPlayers, int cardsPerPlayer) {
         if (numPlayers * cardsPerPlayer > deck.length) {
             System.out.println("Error: Not enough cards to distribute!");
@@ -43,6 +51,7 @@ public class DeckOfCards {
         }
         return players;
     }
+    //Display the hands
     public void printPlayerCards(String[][] players) {
         if (players == null) return;
 

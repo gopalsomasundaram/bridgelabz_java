@@ -1,7 +1,11 @@
 package strings.level3;
 
 import java.util.Scanner;
+/*
+ * This class provides three different logic paths to verify if a string is a palindrome.
+ */
 public class PalindromeCheck {
+    // Logic 1: The Two-Pointer Approach (Most Efficient)
     public boolean isPalindromeIterative(String text) {
         int start = 0;
         int end = text.length() - 1;
@@ -15,7 +19,7 @@ public class PalindromeCheck {
         }
         return true;
     }
-
+    // Logic 2: Recursive Approach
     public boolean isPalindromeRecursive(String text, int start, int end) {
         if (start >= end) {
             return true;
@@ -25,6 +29,7 @@ public class PalindromeCheck {
         }
         return isPalindromeRecursive(text, start + 1, end - 1);
     }
+    // Logic 3: String Reversal (Easiest to Understand)
     public String reverseString(String text) {
         char[] reversed = new char[text.length()];
         int j = 0;
@@ -37,7 +42,7 @@ public class PalindromeCheck {
     public boolean isPalindromeByReversal(String text) {
         char[] original = text.toCharArray();
         char[] reversed = reverseString(text).toCharArray();
-
+        // Using custom character-by-character comparison
         for (int i = 0; i < original.length; i++) {
             if (original[i] != reversed[i]) {
                 return false;
