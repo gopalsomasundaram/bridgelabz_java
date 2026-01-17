@@ -1,6 +1,9 @@
 package ConstructorsAccessModifiers.Level1;
-
+/*
+ * This class demonstrates object cloning through a Copy Constructor.
+ */
 public class Person {
+    //Attributes
     String name;
     int age;
 
@@ -22,7 +25,9 @@ public class Person {
     }
 
     public static void main(String[] args) {
+        //Create original object
         Person p1 = new Person("Alice", 22); // original object
+        //Use the copy constructor to "clone" Alice
         Person p2 = new Person(p1);          // cloned object
 
         p1.displayData();

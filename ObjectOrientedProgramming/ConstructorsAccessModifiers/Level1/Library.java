@@ -1,10 +1,18 @@
 package ConstructorsAccessModifiers.Level1;
+/*
+ * This class models a Library Book and manages
+ * its availability status.
+ */
 public class Library {
+    //Attributes
     String title = "Effective Java";
     String author = "Joshua Bloch";
     int price = 600;
+
+    //State Switch
     boolean availability = true;
 
+    //Modifying state with conditional logic
     void borrowBook() {
         if (availability) {
             availability = false;
@@ -22,6 +30,7 @@ public class Library {
     }
 
     public static void main(String[] args) {
+        //Object Creation
         Library obj = new Library();
 
         obj.displayData();

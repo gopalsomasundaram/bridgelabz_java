@@ -1,6 +1,10 @@
 package ConstructorsAccessModifiers.Level1;
-
+/*
+ * This class demonstrates Constructor Overloading including a Copy Constructor.
+ * A copy constructor allows you to initialize a new object using another object's data.
+ */
 public class HotelBooking {
+    //Attributes
     String guestName;
     String roomType;
     int nights;
@@ -33,16 +37,17 @@ public class HotelBooking {
     }
 
     public static void main(String[] args) {
+        // Standard creation
         HotelBooking b1 = new HotelBooking(); // default
         b1.displayData();
 
         System.out.println();
-
+        // Custom creation
         HotelBooking b2 = new HotelBooking("Rahul", "Deluxe", 3); // parameterized
         b2.displayData();
 
         System.out.println();
-
+        //Using the Copy Constructor
         HotelBooking b3 = new HotelBooking(b2); // copy
         b3.displayData();
     }

@@ -1,6 +1,10 @@
 package ConstructorsAccessModifiers.Level1;
-
+/*
+ * This class models a Car Rental system using overloaded constructors.
+ * It ensures the total cost is automatically calculated upon object creation.
+ */
 public class CarRental {
+    //Attributes
     String customerName;
     String carModel;
     int rentalDays;
@@ -8,6 +12,7 @@ public class CarRental {
     int totalCost;
 
     // Default constructor
+    // Allows for custom rental agreements.
     CarRental() {
         customerName = "Customer";
         carModel = "Hatchback";
@@ -24,7 +29,7 @@ public class CarRental {
         costPerDay = rate;
         calculateTotalCost();
     }
-
+    //Helper Method
     void calculateTotalCost() {
         totalCost = rentalDays * costPerDay;
     }
@@ -37,11 +42,13 @@ public class CarRental {
     }
 
     public static void main(String[] args) {
+
+        // Creates a Hatchback for 1 day at 1000
         CarRental r1 = new CarRental(); // default
         r1.displayData();
-
         System.out.println();
 
+        // Creates an SUV for 5 days at 2000
         CarRental r2 = new CarRental("Amit", "SUV", 5, 2000); // parameterized
         r2.displayData();
     }
