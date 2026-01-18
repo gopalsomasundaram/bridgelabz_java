@@ -1,5 +1,8 @@
 package ConstructorsAccessModifiers.Level2;
-
+/*
+ * This class demonstrates the difference between Instance and Static members.
+ * It shows how static members provide a "Global" state for all objects of the class.
+ */
 public class Course {
     // Instance variables
     String courseName;
