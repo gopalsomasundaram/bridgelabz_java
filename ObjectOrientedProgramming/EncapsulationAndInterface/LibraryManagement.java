@@ -1,4 +1,4 @@
-package EncapsulationAndInheritance;
+package EncapsulationAndInterface;
 
 import java.util.ArrayList;
 
