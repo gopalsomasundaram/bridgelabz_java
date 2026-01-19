@@ -83,3 +83,8 @@
 **What I have done:** Class And Object problems Level 2, Constructors Level 1, added single and multi-line comments for week 1 programs\
 **What I will do:** Constructors Level 2 \
 **issues:** nil
+
+**Date:** 17th January 2025\
+**What I have done:** Constructors problems level 2, Class Keywords problems, Inheritance problems, Encapsulation and Interface Problems, Object Modeling Problems\
+**What I will do:** Linked List problems \
+**issues:** nil
