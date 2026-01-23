@@ -88,3 +88,23 @@
 **What I have done:** Constructors problems level 2, Class Keywords problems, Inheritance problems, Encapsulation and Interface Problems, Object Modeling Problems\
 **What I will do:** Linked List problems \
 **issues:** nil
+
+**Date:** 19th January 2025\
+**What I have done:** Linked List problems\
+**What I will do:** Stack, Queue and Hash Map problems \
+**issues:** nil
+
+**Date:** 20th January 2025\
+**What I have done:** Stack, Queue and Hash Map problems\
+**What I will do:** Sorting algorithm problems \
+**issues:** nil
+
+**Date:** 21th January 2025\
+**What I have done:** Sorting algorithm problems\
+**What I will do:** String Builder and Input Stream Problems\
+**issues:** nil
+
+**Date:** 22th January 2025\
+**What I have done:** String Builder and Input Stream Problems\
+**What I will do:** Linear, binary search, Big-O notation problems\
+**issues:** nil
