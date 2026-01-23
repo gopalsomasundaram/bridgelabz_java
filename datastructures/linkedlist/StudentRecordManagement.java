@@ -1,4 +1,4 @@
-package LinkedList;
+package linkedlist;
 /*
 this is the basic node class to be used in the linked list, it contains the required data members and also
 refernces to the next node which is initialized as null. the nodes also stores roll number, name, age, grade

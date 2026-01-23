@@ -1,4 +1,4 @@
-package LinkedList;
+package linkedlist;
 
 /*
 this class defines the individual nodes used in the circular linked list
