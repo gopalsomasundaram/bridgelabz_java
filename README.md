@@ -99,12 +99,37 @@
 **What I will do:** Sorting algorithm problems \
 **issues:** nil
 
-**Date:** 21th January 2025\
+**Date:** 21st January 2025\
 **What I have done:** Sorting algorithm problems\
 **What I will do:** String Builder and Input Stream Problems\
 **issues:** nil
 
-**Date:** 22th January 2025\
+**Date:** 22nd January 2025\
 **What I have done:** String Builder and Input Stream Problems\
 **What I will do:** Linear, binary search, Big-O notation problems\
+**issues:** nil
+
+**Date:** 23rd January 2025\
+**What I have done:** Linear, binary search, Big-O notation problems\
+**What I will do:** Algorithm's Runtime Analysis & Big-O Notation problems\
+**issues:** nil
+
+**Date:** 24th January 2025\
+**What I have done:** Algorithm's Runtime Analysis & Big-O Notation problems\
+**What I will do:** OOPS Banner Application\
+**issues:** nil
+
+**Date:** 27th January 2025\
+**What I have done:** OOPS Banner Application upto use case 5\
+**What I will do:** OOPS Banner Application leftover use cases\
+**issues:** nil
+
+**Date:** 28th January 2025\
+**What I have done:** OOPS Banner Application upto use case 5-8\
+**What I will do:** Java Generics Problems \
+**issues:** nil
+
+**Date:** 29th January 2025\
+**What I have done:** Java Generics Problems \
+**What I will do:** Java Collections Problems \
 **issues:** nil
