@@ -125,11 +125,6 @@
 **issues:** nil
 
 **Date:** 28th January 2025\
-**What I have done:** OOPS Banner Application upto use case 5-8\
-**What I will do:** Java Generics Problems \
-**issues:** nil
-
-**Date:** 29th January 2025\
-**What I have done:** Java Generics Problems \
-**What I will do:** Java Collections Problems \
+**What I have done:** OOPS Banner Application upto use case 5-8, Java Generics Problems (partial)\
+**What I will do:** Java Genrics Problems (Partial) \
 **issues:** nil
