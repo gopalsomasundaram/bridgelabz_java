@@ -128,3 +128,19 @@
 **What I have done:** OOPS Banner Application upto use case 5-8, Java Generics Problems (partial)\
 **What I will do:** Java Genrics Problems (Partial) \
 **issues:** nil
+
+**Date:** 29th January 2025\
+**What I have done:** Java Genrics Problems (Partial), Factory Robot Hazard Analyzer \
+**What I will do:** Java Collections problems(partial) \
+**issues:** nil
+
+**Date:** 30th January 2025\
+**What I have done:** Java Collections problems(partial) \
+**What I will do:** Java Collections problems(partial)\
+**issues:** nil
+
+**Date:** 31st January 2025\
+**What I have done:** Java Collections problems\
+**What I will do:** java IO Stream problems\
+**issues:** nil
+ 
