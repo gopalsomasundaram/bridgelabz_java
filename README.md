@@ -140,7 +140,12 @@
 **issues:** nil
 
 **Date:** 31st January 2025\
-**What I have done:** Java Collections problems\
-**What I will do:** java IO Stream problems\
+**What I have done:** Java Collections problems (partial), java IO Stream problems\
+**What I will do:** Java Exception Handling Problems\
+**issues:** nil
+
+**Date:** 2nd January 2025\
+**What I have done:** java Exception Handling problems\
+**What I will do:** \
 **issues:** nil
  
