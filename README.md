@@ -146,6 +146,11 @@
 
 **Date:** 2nd January 2025\
 **What I have done:** java Exception Handling problems\
-**What I will do:** \
+**What I will do:** OceanFleet App  – Use Case–Driven OOPS & Data Structures Learning Project\
+**issues:** nil
+
+**Date:** 3rd January 2025\
+**What I have done:** OceanFleet App  – Use Case–Driven OOPS & Data Structures Learning Project\
+**What I will do:** 
 **issues:** nil
  
